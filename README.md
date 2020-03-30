@@ -1,0 +1,1 @@
+# Boilerplate for a NextJS + React + TypeScript app. Dunno.
