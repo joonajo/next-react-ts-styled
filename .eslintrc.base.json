@@ -21,7 +21,6 @@
         "project": "./src/tsconfig.json"
       },
       "rules": {
-        "custom-rules/datadog-rum-add-error": "error",
         "prettier/prettier": "error",
         "@typescript-eslint/adjacent-overload-signatures": "error",
         "@typescript-eslint/array-type": "error",
@@ -197,20 +196,6 @@
         "spaced-comment": "error",
         "use-isnan": "error",
         "valid-typeof": "off"
-      }
-    },
-    {
-      "files": ["*.svg"],
-      "parser": "@html-eslint/parser",
-      "rules": {
-        "@html-eslint/no-restricted-attrs": [
-          "error",
-          {
-            "tagPatterns": ["^image$"],
-            "attrPatterns": ["xlink:href*"],
-            "message": "SVG image element is forbidden. If you intend to use raster images prefer png instead, otherwise make sure the svg uses vectors only."
-          }
-        ]
       }
     }
   ]

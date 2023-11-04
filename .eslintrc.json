@@ -1,0 +1,19 @@
+{
+  "extends": "./.eslintrc.base",
+  "env": {
+    "browser": true
+  },
+  "plugins": ["react", "react-hooks", "jest"],
+  "rules": {
+    "react/jsx-boolean-value": "error",
+    "react/react-in-jsx-scope": "error",
+    "react-hooks/exhaustive-deps": [
+      "error",
+      {
+        "additionalHooks": "(^useFetch$)"
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "jest/no-focused-tests": "error"
+  }
+}
