@@ -1,6 +1,5 @@
-import React from 'react';
-
 import App from 'next/app';
+import React from 'react';
 
 import './global.css';
 
