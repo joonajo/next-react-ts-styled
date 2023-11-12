@@ -5,10 +5,10 @@
   "extends": ["plugin:@typescript-eslint/recommended", "prettier", "plugin:import/typescript"],
   "plugins": ["@typescript-eslint", "import", "prettier", "custom-rules", "@html-eslint"],
   "settings": {
-    "import/external-module-folders": ["node_modules"],
+    "import/external-module-folders": ["./node_modules"],
     "import/resolver": {
       "node": {
-        "moduleDirectory": ["src", "src/styles", "node_modules"]
+        "moduleDirectory": ["./pages", "./node_modules"]
       }
     }
   },
@@ -18,7 +18,7 @@
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "sourceType": "module",
-        "project": "./src/tsconfig.json"
+        "project": "./tsconfig.json"
       },
       "rules": {
         "prettier/prettier": "error",

@@ -6,12 +6,19 @@
 // ./pages/_document.js
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import React from 'react';
-import { ServerStyleSheet } from 'styled-components';
+import styled, { ServerStyleSheet } from 'styled-components';
+
+const test = styled.div`
+  margin-right: 20px;
+  padding-left: 20px;
+`;
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
     // Step 1: Create an instance of ServerStyleSheet
     const sheet = new ServerStyleSheet();
+
+    const testString: any = 'asd';
 
     // Step 2: Retrieve styles from components in the page
     const page = ctx.renderPage((App: any) => (props: any) => sheet.collectStyles(<App {...props} />));

@@ -1,0 +1,40 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-use-logical-spec"],
+  "customSyntax": "postcss-styled-syntax",
+  "rules": {
+    "at-rule-empty-line-before": null,
+    "comment-empty-line-before": null,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "declaration-empty-line-before": null,
+    "rule-empty-line-before": null,
+    "media-query-no-invalid": null,
+    "no-extra-semicolons": null,
+    "no-empty-source": null,
+    "selector-class-pattern": null,
+    "length-zero-no-unit": true,
+    "liberty/use-logical-spec": [
+      "always",
+      {
+        "except": [
+          "padding",
+          "margin",
+          "border-bottom-left-radius",
+          "border-bottom-right-radius",
+          "border-top-left-radius",
+          "border-top-right-radius",
+          "bottom",
+          "height",
+          "left",
+          "max-height",
+          "max-width",
+          "min-height",
+          "min-width",
+          "right",
+          "top",
+          "width"
+        ]
+      }
+    ]
+  }
+}
